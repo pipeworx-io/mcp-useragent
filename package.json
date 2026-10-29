@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-useragent",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "User-Agent parser MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-useragent": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "useragent"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-useragent.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/useragent",
   "pipeworx": {
-    "sourceHash": "v1-07c00c986f205ade56299d0c996cc465d0b0bb91042387c28cfa30993c92c006",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "mode": "gateway",
+    "slug": "useragent",
+    "gatewaySlug": "useragent",
+    "sourceHash": "v1-e18fec78cc5c571623b4a15f4ace0f8aff1465ac1466be294f8bfc3f99d793b4",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }

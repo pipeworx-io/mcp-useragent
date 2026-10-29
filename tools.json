@@ -1,0 +1,18 @@
+[
+  {
+    "name": "parse_user_agent",
+    "description": "Parse a User-Agent string into browser, OS, device type (mobile/tablet/desktop/bot) and a bot flag (keyless, offline, heuristic).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "user_agent": {
+          "type": "string",
+          "description": "The User-Agent string."
+        }
+      },
+      "required": [
+        "user_agent"
+      ]
+    }
+  }
+]
