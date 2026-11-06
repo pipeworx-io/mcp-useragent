@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-useragent",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "User-Agent parser MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "useragent",
     "gatewaySlug": "useragent",
-    "sourceHash": "v1-e18fec78cc5c571623b4a15f4ace0f8aff1465ac1466be294f8bfc3f99d793b4",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-bcc7a6a8f4f90a2ad986826dfe6cdfe935ed89d2f05af7f7a6bae190c6d73154",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
